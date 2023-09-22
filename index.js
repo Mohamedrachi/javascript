@@ -78,71 +78,59 @@ if(agE > 18 && haslicense === false && hascar === true){
     console.log("go walk!")
 }
 //exercise 2
-let grade = 1-100
-if(100 - 90){
+let grade = 65
+if(grade > 90 && grade < 100){
     console.log("You Get A Grade!")
 }
-if(90 - 75){
+else if(grade > 75 && grade < 90){
     console.log("You Get B Grade")
 }
-if(75 - 60){
+else if(grade > 60 && grade < 75){
     console.log("You Get C Grade")
 }
-if(60){
-    console.log("You Get an Failed")
+else if(grade < 60){
+    console.log("You FAILED!")
 }
 //javascript part one Assignment
 //Variables and Values exercise
 let country = "somalia"
 let continent = "Africa"
-let population = 50 
+let population = 500000000 
 console.log(`${country} ${continent} ${population}`)
-let language = 100
+let language = "English"
 let onCoust = true
 //Basic operators exercise
-population = 25
-population++
-console.log(`${population}`)
-console.log(true)
-let francepopulation = 33
-let mycountrypopulation =25
-console.log(francepopulation > mycountrypopulation)
-let description = "YOURCOUNTRY is in YOURCONTINENET and its YOURPOPULATION million people speak YOURLANGUAGE"
+console.log(population / 2)
+console.log(population++)
+console.log(110000000 < population)
+console.log(`${country} is in ${continent} and it is ${population} million people speak${language} `)
 //If & Else statements
-let cp = 35
-if(cp > 33){
-   console.log("YOURCOUNTRY's population is above average")
+if(population > 330000000){
+   console.log(`${country} population is above average`)
 }else{
-    console.log("YOURCOUNTRY's population is YOURPOPULATION, bellow average'")
+    console.log(`${country} population is ${population}, bellow average`)
 }
 //Logical Operators
-let copo = 40
-let coast = false
-if(copo < 50 && coast == false){
-    console.log("you should live in YOURCOUNTRY!")
+if(population > 500000000 && onCoust === false){
+    console.log(`you should live in ${country}!`)
 }else{
-    console.log("YOURCOUNTRY does not meet your criteria")
+    console.log(`${country} does not meet your criteria`)
 }
 //If & else Statements
-let chineseormandarin = 1
-let spanish = 2
-let english = 3
-let hindi = 4
-let arabic = 5
-if(chineseormandarin = 1){
+if(language === "chinese" || language === "madrints"){
+
     console.log("MOST number of native speakers")
+}else if(language === "spanish"){
+    console.log("2nd")
 }
-if(spanish = 2){
-    console.log("2nd place in number of native speakers")
-}
-if(english = 3){
-    console.log("3rd place")
-}
-if(hindi = 4){
-    console.log("Number 4")
-}
-if(arabic = 5){
-    console.log("5th most spoken language")
+else if(language === "english"){
+    console.log("3rd")
+}else if(language === "hindi"){
+    console.log("4th")}
+else if(language === "arabic"){
+    console.log("5th")
 }else{
-    console.log("Great languages too ")
-}
+    console.log("Great Languages Too")
+} 
+
+
