@@ -110,3 +110,71 @@ const hi = (name) =>{
     console.log(name)
 }
 hi("Abdi")
+//exercise-1
+function dog(puppysage){
+   console.log(`your dog ${puppysage * 7} years old in dog years!`)
+}
+let dog1 = dog(8)
+
+//exercise-2
+function calculateSupply(age,amountperday){
+       console.log(`You will need ${age * amountperday} to last you until the old age of ${age}`)
+}
+calculateSupply(45,4)
+calculateSupply(34,5)
+calculateSupply(21,3)
+//exercise-3
+function calcTip(bill){
+   if(bill > 50 || bill < 300){
+    let tip = bill*0.15
+     console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}'`)
+   }else if(bill >=300){
+    let tip = bill*0.15
+    console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}'`)
+}
+}
+calcTip(200)
+calcTip(329)
+//objects
+const car = {
+    color:"Black",
+    year:2022,
+    brand:"Toyota"
+}
+console.log(car)
+console.log(car["brand"])     // two ways you can console in values in object car!
+console.log(car.year)
+// OBJECT FUNCTION
+const Car = {
+    color:"Black",
+    year:2022,
+    brand:"Toyota",
+    description: function(){
+        return `My cars color is ${this.color} and its brand is ${this.brand}`
+    }
+}
+let text = Car.description()
+console.log(text)                    //two ways you can console in values in object car!
+console.log(Car.description())
+//Arrays
+let student1 = "Ahmed"
+let student2 = "Ali"
+let stundet3 = "Faadumo"
+
+                 //0      1      2       3   index values
+let students = ["Ahmed","Ali","Faadumo",34]   // array
+console.log(students)
+console.log(students[0])            //the  way u can log array one by one using theirs index
+console.log(students[2]) 
+//loop through array
+const names = ["Ali","Ahmed","Aisha","Faadumo","Amina","Hassan"]
+
+for(let i=0; i <6; i++){
+    console.log(names[i])
+}
+
+const Names = ["Ali","Ahmed","Aisha","Faadumo","Amina","Hassan","Jamac"]
+
+for(let i=0; i < Names.length; i++){ // Names.length TELLS US HOW MANY VALUES ARE IN MY ARRAY
+    console.log(`Hello my name is ${Names[i]}`)
+}
