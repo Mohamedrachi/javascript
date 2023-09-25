@@ -178,3 +178,51 @@ const Names = ["Ali","Ahmed","Aisha","Faadumo","Amina","Hassan","Jamac"]
 for(let i=0; i < Names.length; i++){ // Names.length TELLS US HOW MANY VALUES ARE IN MY ARRAY
     console.log(`Hello my name is ${Names[i]}`)
 }
+//JS FUNDAMENTLS ASSIGNMENT
+//FUNCTIONS
+function describeCountry(country,population,capitalCity){
+         console.log(`${country} has ${population} million people and its captial city is ${capitalCity}'`)
+}
+describeCountry("puntland",5,"garawe")
+
+let turkey = describeCountry("TURKEY",200,"ankara")
+let plestine = describeCountry("plestine",300,"GHAZA")
+let othmanempire = describeCountry("othman",500,"Adirna")
+console.log(turkey&plestine&othmanempire)
+
+function percentageOfWorld1(country,population){
+     console.log(`${country} has ${population} million people, so it's about ${population/7900*100} of the world population`)
+}
+percentageOfWorld1("china",1441)
+
+let canada = percentageOfWorld1("canada",1200)
+let malawi = percentageOfWorld1("malawi",1000)
+let zambia = percentageOfWorld1("zambia",500)
+console.log(canada&malawi&zambia)
+//introduction to arrys
+let population = ["china:200","canada:300","croatia:100","germany:50"]
+
+let neighbours = ["ithopia","kenya","erteria","djabuti"]
+console.log(neighbours.length)
+//iteration for loops
+for(let i = 0; i < 4; i++){
+     console.log(neighbours[i])
+}
+
+for( i = 3; i >= 0; i--){
+    console.log(neighbours[i])
+}
+//iteration while loop
+let x = 0
+
+while(x <= 9  ){
+    console.log(x)
+    x++
+    
+}
+
+let y = 1
+while(y <= 10){
+    console.log(y)
+    y++
+}
