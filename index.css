@@ -1,1 +1,37 @@
-/*  css  *\
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#container{
+    background-color: black;
+    color:white;
+    height: 100vh;
+    margin-bottom: 450px;
+}
+
+h1{
+    font-size:20px;
+}
+
+p{
+    font-size:12px;
+    padding: 8px 25px;
+}
+
+#con2{
+    margin-bottom: 200px;
+}
+#con2 button{
+    width: 50px;
+    height: 30px;
+    margin-top: 25px;
+    padding-right: 50px;
+    padding-left: 5px;
+    border-radius: 2px;
+}
+p{
+    font-size: 30px;
+}
