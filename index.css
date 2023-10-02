@@ -4,12 +4,9 @@ html, body {
     box-sizing: border-box;
     text-align: center;
 }
-
-#container{
-    background-color: black;
-    color:white;
-    height: 100vh;
-    margin-bottom: 450px;
+section{
+    display: flex;
+    flex-direction: row
 }
 
 h1{
@@ -20,9 +17,21 @@ p{
     font-size:12px;
     padding: 8px 25px;
 }
-
+#div1{
+    background-color: darkgoldenrod;
+}
+/*small apllication*/
+#con1{
+    background-color:darkgrey;
+    color:white;
+    width: 200vh;
+    height: 50vh;
+}
+/*BMI CALCULATOR USINF=G DOM */
 #con2{
-    margin-bottom: 200px;
+    width: 200vh;
+    height: 50vh;
+    background-color: aqua;
 }
 #con2 button{
     width: 50px;
@@ -35,4 +44,16 @@ p{
 p{
     font-size: 30px;
 }
-/* good*\
+/*calculate tip */
+#con3{
+    width: 200vh;
+    height: 50vh;
+    text-align: center;
+    background-color: darkcyan;
+}
+#p1{
+    font-size: 20px;
+}
+#p2{
+    font-size: 20px;
+}
