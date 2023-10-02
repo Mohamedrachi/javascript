@@ -20,9 +20,9 @@ document.querySelector("#check").addEventListener("click",function(){
     //2. condition age >= 18  =>  background green
    //   age < 18  =>   background red
    if( age >= 18){
-    document.getElementById("container").style.background = "green"
+    document.getElementById("con1").style.background = "green"
     }else {
-        document.getElementById("container").style.background = "red"
+        document.getElementById("con1").style.background = "red"
    }
 
 
@@ -34,4 +34,18 @@ document.querySelector("#b2").addEventListener("click",function(){
     let BMI =  mass / (height * height)
     
     document.querySelector("#bmi").innerText = `Your BMI is ${BMI}`
+})
+//calculate tip dom exercise
+document.querySelector("#b3").addEventListener("click",function(){
+    let bill = document.querySelector("#in4").value
+    if(bill > 50 && bill <= 250){
+        let tip = bill * 0.15 
+        document.querySelector("#result").innerText = `your bill is ${bill} and your tip is ${tip}
+        total is ${bill + tip}`
+    }else if(bill > 300 ){
+        let tip = bill * 0.2
+        document.querySelector("#result").innerText = `your bill is ${bill} and your tip is ${tip}
+        total is ${bill + tip}`
+        
+    }
 })
