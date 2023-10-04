@@ -49,3 +49,23 @@ document.querySelector("#b3").addEventListener("click",function(){
         
     }
 })
+//adding new elements in html using dom
+let h3 = document.createElement("h3")
+
+h3.innerText = "Apple"
+
+document.querySelector("#list").appendChild(h3)
+// adding new student
+document.querySelector("#but").addEventListener("click",function(){
+    let name = document.querySelector("#add").value
+   let li = document.createElement("li")
+   li.innerText = name
+   document.querySelector("#student").appendChild(li)
+})
+//adding element class inside html using dom
+document.querySelector("#add1").addEventListener("click",function(){
+    document.querySelector("#header").classList.add("yellow")
+})
+document.querySelector("#remove").addEventListener("click",function(){
+    document.querySelector("#header").classList.remove("yellow")
+})
