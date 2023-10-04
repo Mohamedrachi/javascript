@@ -4,12 +4,12 @@ html, body {
     box-sizing: border-box;
     text-align: center;
 }
-section{
+#sec02{
     display: flex;
-    flex-direction: row
+    flex-direction: row;
 }
 
-h1{
+h2{
     font-size:20px;
 }
 
@@ -19,6 +19,8 @@ p{
 }
 #div1{
     background-color: darkgoldenrod;
+    width: 200vh;
+    height: 50vh;
 }
 /*small apllication*/
 #con1{
@@ -56,4 +58,44 @@ p{
 }
 #p2{
     font-size: 20px;
+}
+
+/* adding new elements in html using dom  */
+#sec03{
+    display: flex;
+    flex-direction: row;
+}
+#sec03 #div01{
+    width: 200vh;
+    height: 50vh;
+    text-align: center;
+}
+#sec03 #div01{
+    width: 200vh;
+    height: 50vh;
+    text-align: center;
+    background-color: cyan;
+}
+/* adding new student */
+#sec03 #div02 {
+   text-align: center;
+   width: 200vh;
+    height: 50vh;
+   align-items: center;
+   background-color: chocolate;
+}
+#sec03 #div02 ul li{
+    list-style: none;
+}
+/* adding element class inside html using dom */
+#sec03 #div03{
+    align-items: center;
+    text-align: center;
+    width: 200vh;
+    height: 50vh;
+    background-color: chartreuse;
+}
+.yellow{
+    color:blue
+
 }
