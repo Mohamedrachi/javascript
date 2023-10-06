@@ -80,9 +80,12 @@ p{
 #sec03 #div02 {
    text-align: center;
    width: 200vh;
-    height: 50vh;
+   height: 50vh;
    align-items: center;
    background-color: chocolate;
+}
+#sec03 #div02 #add1{
+    background-color: white;
 }
 #sec03 #div02 ul li{
     list-style: none;
@@ -98,4 +101,31 @@ p{
 .yellow{
     color:blue
 
+}
+
+/* TO Do List assignment */
+.form {
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+#input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+}
+#input:focus , .add:focus{
+    outline: none;
+}
+#add {
+    border: none;
+    background-color: #389dff;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
 }
