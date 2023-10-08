@@ -57,7 +57,7 @@ h3.innerText = "Apple"
 document.querySelector("#list").appendChild(h3)
 // adding new student
 document.querySelector("#but").addEventListener("click",function(){
-    let name = document.querySelector("#add").value
+    let name = document.querySelector("#add8").value
    let li = document.createElement("li")
    li.innerText = name
    document.querySelector("#student").appendChild(li)
@@ -69,3 +69,14 @@ document.querySelector("#add1").addEventListener("click",function(){
 document.querySelector("#remove").addEventListener("click",function(){
     document.querySelector("#header").classList.remove("yellow")
 })
+// To Do List Assignment
+document.querySelector("#add9").addEventListener("click",function(){
+    let to = document.querySelector("#inpud").value
+    let in4 =  document.createElement("div")
+    in4.innerText = to
+    in4.classList.add("task")
+    document.querySelector(".tasks").appendChild(in4)
+})
+
+
+
