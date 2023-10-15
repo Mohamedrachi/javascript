@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Guess my number Game</title>
     <link rel="stylesheet" href="index2.css" />
-    <title>Guess My Number!</title>
   </head>
   <body>
     <header>
-      <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
-      <div class="number">?</div>
+        <button class="again-btn">Again!</button>
+        <p class="range">Choose a number between 1 and 20</p>
+        <h1 class="title">Guess my Number Game</h1>
+        <hr>
+        <div class="number">?</div>
     </header>
-    <main>
-      <section class="left">
-        <input type="number" class="guess" />
-        <button class="btn check">Check!</button>
-      </section>
-      <section class="right">
-        <p class="message">Start guessing...</p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </p>
-      </section>
-    </main>
-    <script src="script.js"></script>
+    <div class="stat">
+        <p class="message">Message</p>
+        <span class="score">Score: 20</span></br>
+        <span class="record">Highest Score:</span></br>
+        <input class="guess-number"type="text"></br>
+        <button class="check-btn">Check!</button>
+    </div>
   </body>
+  <script src="Dom-manipulation-project.js"></script>
 </html>
